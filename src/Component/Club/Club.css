@@ -1,0 +1,73 @@
+header{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+}
+.logo{
+    height: 350px;
+    padding-top: 150px;
+    padding-left: 45%;
+    position: relative;
+}
+.clubContent{
+    /* width: 100%; */
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #3a42ff;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+    
+    
+}
+.teamImg{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.description{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+.socialIcon{
+   text-align: center;
+   font-size: 30px;
+}
+.facebook{
+    border-radius: 50%;
+    background-color: #1948ad;
+    color: white;
+    margin-right: 15px;
+}
+.twitter{
+    border-radius: 50%;
+    background-color: #00acee;
+    color: white;
+}
+.youtube{
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    margin-left: 15px;
+    border: red;
+    margin-right: 15px;
+}
+
+.website{
+    border-radius: 50%;
+    background-color: rgba(0, 128, 128, 0.596);
+    color: white;
+}
