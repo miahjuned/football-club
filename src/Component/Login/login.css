@@ -1,0 +1,31 @@
+.loginImg{
+    width: 100%;
+    height: 100%;
+}
+.loginImg img{
+    width: 100%;
+    height: 100%;
+}
+.loginBtn, .signinBtn{
+    width: 50%;
+    background-color: #F50057;
+    border: none;
+}
+.submitBtn{
+    width: 100%;
+    background-color: #F50057;
+    border: none;
+}
+
+.google{
+    background-color: #f4c20d48;
+    border-radius: 50%;
+    margin-right: 15px;
+    /* font-size: 20px; */
+}
+.github{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+}

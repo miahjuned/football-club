@@ -4,7 +4,7 @@ import './Club.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapPin,faFlag,faFutbol,faMarsStroke, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faTwitterSquare,faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -19,7 +19,7 @@ const Club = () => {
         .then(data => setClubDetails(data.teams[0]))
     }, [])
 
-    const {strWebsite,strFacebook,strTwitter,strYoutube, strTeam,intFormedYear, strStadiumDescription,strCountry,strDescriptionEN ,strGender,strLeague, idTeam, strStadiumThumb,strTeamFanart4, strTeamBanner,strTeamBadge} =clubDetails;
+    const {strWebsite,strFacebook,strTwitter,strYoutube, strTeam,intFormedYear, strStadiumDescription,strCountry,strDescriptionEN ,strGender,strLeague,  strStadiumThumb,strTeamFanart4, strTeamBadge} =clubDetails;
    
    
     return (
@@ -32,8 +32,8 @@ const Club = () => {
             
             <div className="row clubContent">
 
-                    <div className="col-md-6 col-sm-12 col-lg-6 col">
-                        <h1 className="text-light ml-5">{strTeam}</h1>
+                    <div className="col-md-6 col-sm-12 col-lg-6 col ml-2">
+                        <h1 className="text-light">{strTeam}</h1>
                         <p><FontAwesomeIcon icon={faMapPin} /> Founded : {intFormedYear}</p>
                         <p><FontAwesomeIcon icon={faFlag} /> Country : {strCountry} </p>
                         <p><FontAwesomeIcon icon={faFutbol} /> League : {strLeague}</p>
@@ -54,18 +54,18 @@ const Club = () => {
 
 
                 <div className="socialIcon mb-5">
-                    <Link className='btn facebook' to={`/club/${strFacebook}`}>
+                    <a className='btn facebook' target ="_blank" href={'https://'+strFacebook}>
                         <FontAwesomeIcon icon={faFacebookSquare} />
-                    </Link>
-                    <Link className='btn twitter' to={`/club/${strTwitter}`}>
+                    </a>
+                    <a className='btn twitter' target ="_blank" href={'https://'+strTwitter}>
                         <FontAwesomeIcon icon={faTwitterSquare} />
-                    </Link>
-                    <Link className='btn youtube' to={`/club/${strYoutube}`}>
+                    </a>
+                    <a className='btn youtube' target ="_blank" href={'https://'+strYoutube}>
                         <FontAwesomeIcon icon={faYoutube} />
-                    </Link>
-                    <Link className='btn website' to={`${strWebsite}`}>
+                    </a>
+                    <a className='btn website' target ="_blank" href={'https://'+strWebsite}>
                         <FontAwesomeIcon icon={faGlobe} /> 
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

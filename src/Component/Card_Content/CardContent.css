@@ -1,6 +1,20 @@
 body{
-    background-color: #003049;
+    /* background-color: #003049; */
 }
 .cardContent{
     overflow: hidden;
+}
+.cardContainer{
+    border-radius: 15px;
+}
+.likeButton{
+    font-size: 25px;
+    margin-right: 30px;
+    /* margin-top: 10px; */
+    justify-content:space-evenly;
+}
+.likeButton:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: transform ease-in-out .5s;
 }

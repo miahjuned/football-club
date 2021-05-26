@@ -20,7 +20,7 @@ header{
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #3a42ff;
+    background-color: #3a40ff;
     color: white;
     border-radius: 20px;
     align-items: center;
@@ -51,6 +51,11 @@ header{
     background-color: #1948ad;
     color: white;
     margin-right: 15px;
+}
+.facebook:hover, .twitter:hover, .youtube:hover, .website:hover, .github:hover, .google:hover{
+    border-radius: 40%;
+    color: white;
+    box-shadow: 1px 4px lightgray;
 }
 .twitter{
     border-radius: 50%;

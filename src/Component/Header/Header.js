@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header">
             <img className='img' src="https://www.thesportsdb.com/images/media/team/stadium/vvpvxw1420243385.jpg" alt=""/>
-            <h1>Welcome to our football zone!</h1>
+            <h1>Hello! Welcome to Club zone!</h1>
             <Card></Card>
         </div>
     );
