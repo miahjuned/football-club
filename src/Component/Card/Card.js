@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import CardContent from '../Card_Content/CardContent'
+import CardContent from '../Card_Content/CardContent';
+import './Card.css'
 
 const Club = () => {
     const [Club, setClub] = useState([]);
@@ -13,7 +14,18 @@ const Club = () => {
     return (
         <div className='container '>
             <div className="row ">
-                {Club.map(club => <CardContent club={club}></CardContent>)}
+
+                {/* Loading spainer */}
+                {
+                    Club.length === 0 && <div className="spinner-border text-info spiner" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+                }
+
+                {/* API MAP */}
+                {Club.map(club => <CardContent club={club} key={club.idTeam}></CardContent>)}
+
+
             </div>
         </div>
     );

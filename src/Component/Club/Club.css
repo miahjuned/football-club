@@ -6,14 +6,13 @@ header{
 .banner{
     width: 100%;
     height: 100%;
-    opacity: 0.4;
     position: absolute;
 }
 .logo{
     height: 350px;
-    padding-top: 150px;
-    padding-left: 45%;
+    padding: 15% 44% 0% 45%;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.514);
 }
 .clubContent{
     /* width: 100%; */
@@ -38,9 +37,10 @@ header{
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    color: white;
+    color: #393939;
     border-radius: 20px;
     align-items: center;
+    font-weight: 500;
 }
 .socialIcon{
    text-align: center;

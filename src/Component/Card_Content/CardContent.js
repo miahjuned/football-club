@@ -18,7 +18,7 @@ const [likeColor, setLike] = useState('');
 const [likeCount, setLikeCount] = useState(78);
 const handleLikeColor = () => {
     const color = likeColor ? '' : 'red';
-    if (likeColor == '') {
+    if (likeColor === '') {
         setLikeCount(likeCount + 1)
     }
     else{
@@ -41,12 +41,16 @@ const handleLove = () => {
     const color = loveColor ? '' : 'red';
     setLove(color);
     setCount(loveColor? loveCount - 1 : loveCount + 1)
+
+
 }
 
 // const {name, setName} =useState("");
 useEffect(() => {
-    document.title =`count ${loveCount}`
-})
+    document.title =`Football zone | Club details | Total love count ${loveCount}`;
+ 
+}, [loveCount]);
+
     return (
         <div className="col-md-6 col-sm-12 col-lg-4 col">
 
@@ -58,9 +62,9 @@ useEffect(() => {
             
             
             
-            <div className="card cardContainer text-center mb-4 "> 
-                <img className='cardContainer' src={strTeamFanart4} alt=""/>
-                <img  src={strTeamBanner} alt=""/>
+            <div className="card text-center mb-4 "> 
+                <img className='cardImage' src={strTeamFanart4} alt=""/>
+                <img className='cardBanner' src={strTeamBanner} alt=""/>
                 <div className="card-body">
 
                     <h5 className="card-title">
@@ -74,14 +78,21 @@ useEffect(() => {
                     </p>
 
 
-                    <Link className='btn btn-primary' to={`/club/${idTeam}`}>Explore <FontAwesomeIcon icon={faArrowCircleRight} /></Link> <br/>
-                    <div className="d-flex">
+                    <Link className='btn btn-outline-primary' to={`/club/${idTeam}`}>
+                        Explore <FontAwesomeIcon icon={faArrowCircleRight} />
+                    </Link> 
 
-                        <button className='m-1'>{loveCount}  <FontAwesomeIcon onClick={handleLove} color={loveColor} className='likeButton' icon={faHeart} /></button>
+                    <hr/>
 
-                        <button className='m-1'>{likeCount}  <FontAwesomeIcon onClick={handleLikeColor} color={likeColor} className='likeButton' icon={faThumbsUp} /></button>
+                    <div className="d-flex reactionCount">
 
-                        <button className='m-1'>{dislikeCount}  <FontAwesomeIcon onClick={handleDisikeColor} color={dislikeColor} className='likeButton' icon={faThumbsDown} /></button>
+                        {/* <button className='m-1'>{loveCount}  <FontAwesomeIcon onClick={handleLove} color={loveColor} className='likeButton' icon={faHeart} /></button> */}
+                       
+                        <span>{loveCount} <FontAwesomeIcon  onClick={handleLove} color={loveColor} className='likeButton' icon={faHeart}/></span>
+
+                        <span>{likeCount}  <FontAwesomeIcon onClick={handleLikeColor} color={likeColor} className='likeButton' icon={faThumbsUp} /></span>
+
+                        <span>{dislikeCount}  <FontAwesomeIcon onClick={handleDisikeColor} color={dislikeColor} className='likeButton' icon={faThumbsDown} /></span>
 
                     </div>
                 </div>

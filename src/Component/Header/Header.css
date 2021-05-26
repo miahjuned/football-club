@@ -1,18 +1,21 @@
 .header{
     width: 100%;
-    height: 200px;
+    height: 400px;
     margin-bottom: 25px;
     position: relative;
 }
 .img{
     width: 100%;
-    opacity: 0.3;
+    height: 100%;
     position: absolute;
 }
 h1{
-    color: white;
     font-size: 70px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    padding: 50px;
+    padding: 150px 50px 100px 50px;
+    font-weight: 700;
+    position: relative;
+    background-color:rgba(0, 0, 0, 0.432);
+    color: white;
 }

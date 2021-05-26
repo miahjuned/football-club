@@ -1,20 +1,30 @@
-body{
-    /* background-color: #003049; */
+.card{
+    background-color: rgba(135, 207, 235, 0.315);
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
 }
-.cardContent{
-    overflow: hidden;
+.cardImage{
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    height: 150px;
 }
-.cardContainer{
-    border-radius: 15px;
+
+.cardBanner{
+    height: 50px;
 }
+
+.reactionCount{
+    /* background-color: skyblue; */
+    justify-content: space-evenly;
+}
+
 .likeButton{
     font-size: 25px;
-    margin-right: 30px;
-    /* margin-top: 10px; */
-    justify-content:space-evenly;
+    margin-right: 10px;
+
 }
 .likeButton:hover{
-    color: red;
+    /* color: red; */
     transform: scale(1.2);
     transition: transform ease-in-out .5s;
 }
