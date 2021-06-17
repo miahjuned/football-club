@@ -1,5 +1,9 @@
-# Hello! Welcome to Football Club
+# This is a dynamic website.
 
-A single page Football club app where people are able to select club in their choice and checkout the club information with full details.
+A user can view the information of any team by clicking on the Explore button and it will dynamically display all the information in the Website UI including the team's banner, logo, founding year, the team's Facebook page, Twitter page, and the team's website.
+
+And a user can give like, dislike, and love reactions to their favorite team.
 
 This project link [Live site](https://football-zone.netlify.app).
+
+
